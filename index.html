@@ -9,17 +9,17 @@
     margin: 0; padding: 0; height: 100%; background: black;
     overflow: hidden;
   }
-  video { /* iframe yerine video etiketini hedefliyoruz */
+  video {
     position: fixed;
     top: 0; left: 0;
     width: 100%; height: 100%;
-    object-fit: cover; /* Videonun ekranı doldurmasını sağlar, en boy oranını koruyarak */
-    border: none; /* Kenarlık olmamasını sağlar */
+    object-fit: cover;
+    border: none;
   }
 </style>
 </head>
 <body>
-  <video autoplay loop muted controls>
+  <video autoplay loop controls>
     <source src="umran.mp4" type="video/mp4">
     Tarayıcınız video etiketini desteklemiyor.
   </video>

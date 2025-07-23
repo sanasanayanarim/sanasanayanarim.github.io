@@ -9,18 +9,19 @@
     margin: 0; padding: 0; height: 100%; background: black;
     overflow: hidden;
   }
-  iframe {
+  video { /* iframe yerine video etiketini hedefliyoruz */
     position: fixed;
     top: 0; left: 0;
     width: 100%; height: 100%;
-    border: none;
+    object-fit: cover; /* Videonun ekranı doldurmasını sağlar, en boy oranını koruyarak */
+    border: none; /* Kenarlık olmamasını sağlar */
   }
 </style>
 </head>
 <body>
-  <iframe
-    src="https://www.youtube.com/embed/fCmMtc7bzRU?autoplay=1&controls=1&fs=1&modestbranding=1"
-    allow="autoplay; fullscreen" allowfullscreen>
-  </iframe>
+  <video autoplay loop muted controls>
+    <source src="umran.mp4" type="video/mp4">
+    Tarayıcınız video etiketini desteklemiyor.
+  </video>
 </body>
 </html>
